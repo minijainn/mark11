@@ -8,6 +8,9 @@ checkButton.addEventListener("click", check);
 function check() {
   const DOB = date.value;
   const luckyNum = parseInt(num.value);
+  if (luckyNum < 0) {
+    alert("lucky number can't be negative");
+  }
   if (DOB && luckyNum) {
     const splitDOB = DOB.split("-");
 
